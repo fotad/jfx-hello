@@ -1,0 +1,12 @@
+{
+	"resources":[
+{"pattern":".*.txt$"},
+{"pattern":".*.frag$"},
+{"pattern":".*.css$"},
+{"pattern":".*.bss$"},
+{"pattern":".*.xml$"},
+{"pattern":".*.vert$"},
+{"pattern":".*.png$"},
+{"pattern":".*.properties$"}			
+		]
+}

@@ -1,0 +1,167 @@
+[
+{
+	"name":"java.lang.String"
+},
+{
+	"name":"java.nio.ByteBuffer",
+	"methods":[
+		{"name":"array"},
+		{"name":"wrap"}
+	]
+},
+{
+	"name":"java.lang.Runnable",
+	"methods":[
+		{"name":"run","parameterTypes":[]}
+	]
+},
+{
+	"name":"java.util.ArrayList",
+	"methods":[
+		{"name":"<init>"},
+		{"name":"add"},
+		{"name":"get"}
+	]
+},
+{
+	"name":"com.sun.glass.ui.Pixels",
+	"methods":[
+		{"name":"attachData"}
+	]
+},
+{
+	"name":"com.sun.glass.ui.gtk.GtkPixels",
+	"methods":[
+		{"name":"<init>"}
+	]
+},
+{
+	"name":"com.sun.glass.ui.Screen",
+	"methods":[
+		{"name":"<init>"},
+		{"name":"notifySettingsChanged"}
+	]
+},
+{
+	"name":"com.sun.glass.ui.View",
+	"methods":[
+		{"name":"notifyResize"},
+		{"name":"notifyMouse"},
+		{"name":"notifyRepaint"},
+		{"name":"notifyKey"},
+		{"name":"notifyView"},
+		{"name":"notifyDragEnter"},
+		{"name":"notifyDragOver"},
+		{"name":"notifyDragDrop"},
+		{"name":"notifyDragLeave"},
+		{"name":"notifyScroll"},
+		{"name":"notifyInputMethod"},
+		{"name":"notifyMenu"}
+	],
+	"fields":[
+		{"name":"ptr"}
+	]
+},
+{
+	"name":"com.sun.glass.ui.gtk.GtkView",
+	"methods":[
+		{"name":"notifyInputMethodDraw"},
+		{"name":"notifyInputMethodCaret"},
+		{"name":"notifyPreeditMode"}
+	]
+},
+{
+	"name":"com.sun.glass.ui.Window",
+	"methods":[
+		{"name":"notifyResize"},
+		{"name":"notifyMove"},
+		{"name":"notifyDestroy"},
+		{"name":"notifyClose"},
+		{"name":"notifyFocus"},
+		{"name":"notifyFocusDisabled"},
+		{"name":"notifyFocusUngrab"},
+		{"name":"notifyMoveToAnotherScreen"},
+		{"name":"notifyLevelChanged"},
+		{"name":"isEnabled"},
+		{"name":"notifyDelegatePtr"}
+	],
+	"fields":[
+		{"name":"ptr"}
+	]
+},
+{
+	"name":"com.sun.glass.ui.gtk.GtkWindow",
+	"methods":[
+		{"name":"notifyStateChanged"}
+	]
+},
+{
+	"name":"com.sun.glass.ui.Clipboard",
+	"methods":[
+		{"name":"contentChanged"}
+	]
+},
+{
+	"name":"com.sun.glass.ui.Cursor",
+	"fields":[
+		{"name":"ptr"}
+	]
+},
+{
+	"name":"com.sun.glass.ui.Size",
+	"methods":[
+		{"name":"<init>"}
+	]
+},
+{
+	"name":"java.util.Map",
+	"methods":[
+		{"name":"get"},
+		{"name":"keySet"},
+		{"name":"containsKey"}
+	]
+},
+{
+	"name":"java.util.HashSet",
+	"methods":[
+		{"name":"<init>"}
+	]
+},
+{
+	"name":"java.util.Set",
+	"methods":[
+		{"name":"add"},
+		{"name":"size"},
+		{"name":"toArray"}
+	]
+},
+{
+	"name":"java.lang.Iterable",
+	"methods":[
+		{"name":"iterator"}
+	]
+},
+{
+	"name":"java.util.Iterator",
+	"methods":[
+		{"name":"hasNext"},
+		{"name":"next"}
+	]
+},
+{
+	"name":"com.sun.glass.ui.gtk.GtkApplication",
+	"fields":[
+		{"name":"display"},
+		{"name":"screen"},
+		{"name":"visualID"}
+	]
+},
+{
+	"name":"com.sun.glass.ui.Application",
+	"methods":[
+		{"name":"reportException"},
+		{"name":"GetApplication"},
+		{"name":"getName"}
+	]
+}
+]

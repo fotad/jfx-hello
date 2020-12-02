@@ -1,0 +1,27 @@
+#! /bin/sh
+
+if [ -z "$JAVA_HOME" ]; then
+	if [ -z "$GRAALVM_HOME" ]; then
+		JAVA_HOME=$HOME/tools/graalvm
+	else
+		JAVA_HOME =$GRAALVM_HOME
+	fi
+fi
+
+OpenJFX=/usr/share/openjfx/lib
+OpenJFX_LIB=/usr/lib/aarch64-linux-gnu/jni
+JAVA_OPTS="-Djava.library.path=$OpenJFX_LIB --module-path $OpenJFX --add-modules=javafx.controls -Dprism.forceGPU=true"
+
+for arg in "$@"; do
+  if [ "$arg" = "-verbose" ]; then
+    JAVA_OPTS="$JAVA_OPTS -Djavafx.debug=true -Djavafx.verbose=true -Dprism.debug=true -Dprism.verbose=true -Dsun.perflog=true"
+  elif [ "$arg" = "-trace" ]; then
+    JAVA_OPTS="$JAVA_OPTS -agentlib:native-image-agent=config-output-dir=res/META-INF/native-image"
+  elif [ "$arg" = "-debug" ]; then
+    JAVA_OPTS="$JAVA_OPTS -agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=8000"
+  else
+    JAVA_OPTS="$JAVA_OPTS $arg"
+  fi
+done
+
+$JAVA_HOME/bin/java $JAVA_OPTS
